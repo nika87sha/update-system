@@ -1,0 +1,8 @@
+[Unit]
+Description=Servicio para actualizar el sistema Arch Linux y plugins de Neovim
+After=network.target
+
+[Service]
+Type=oneshot
+User=tu_usuario  # Reemplaza tu_usuario con tu nombre de usuario
+ExecStart=/opt/scripts/update-system.sh

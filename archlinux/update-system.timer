@@ -1,0 +1,9 @@
+[Unit]
+Description=Ejecutar la actualización diaria del sistema y plugins de Neovim
+
+[Timer]
+OnCalendar=daily at 06:00  # Ejecutar diariamente a las 06:00 (puedes ajustar la hora)
+Persistent=true
+
+[Install]
+WantedBy=timers.target
